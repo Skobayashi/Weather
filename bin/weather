@@ -1,0 +1,12 @@
+#! /usr/bin/env php
+<?php
+
+require_once dirname(__FILE__).'/../src/bootstrap.php';
+
+
+use TripleI\Weather\App;
+
+$app = new App();
+$result = $app->execute($argv);
+echo $result;
+

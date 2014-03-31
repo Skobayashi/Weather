@@ -1,0 +1,18 @@
+{
+    "name": "triplei/weather",
+    "description":" ",
+    "keywords":[
+    ],
+    "config":{
+        "bin-dir": "bin"
+    },
+    "license": "BSD-3-Clause",
+    "autoload":{
+        "psr-4":{
+            "TripleI\\Weather\\": "src/"
+        }
+    },
+    "require-dev": {
+        "satooshi/php-coveralls": "dev-master"
+    }
+}

@@ -1,48 +1,23 @@
-PHP.Skeleton
+TripleI.Weather
 =======
-A standard PHP project skeleton
----------------------------------------------
-This project was created in order to provide project skeleton to start new PHP project.
-Various config files are ready for continuous integration.
+引数に地名を与えて明日の天気を返すコマンドラインツールです。
+livedoor の天気情報を利用しています。
+下記アドレスに記載のない地名では天気を取得することが出来ません。
+http://weather.livedoor.com/weather_hacks/webservice
 
- * phpunit.xml for [phpunit](http://phpunit.de/manual/current/en/index.html)
- * build.xml for [Apache Ant](http://ant.apache.org/) / [Jenkins](http://jenkins-ci.org/)
- * .travis.yml for [Travis CI](https://travis-ci.org/)
 
-Requirements
+動作環境
 ------------
  * PHP 5.3+
 
-Getting started
+使い方
 ---------------
 
-### Create project
+### bin/weather を実行します
 ```
- $ composer create-project php/skeleton {Vendor.Package}
- $ cd {Vendor.Package}
- $ composer dump-autoload
- $ phpunit
-```
-
-
-Using ant
----------
-
-### Prepare
-
-Install QA(Quality Assurance) tools
-```bash
- $ ant require
-```
-Export composer bin path 
-```bash
-export PATH="$HOME/.composer/vendor/bin:$PATH"
-```
-
-## ant
-```bash
- $ ant
- 
- $ ant test
- $ ant report
+ $ bin/weather 豊橋
+ $ -- 豊橋の明日の天気 --
+ $ 晴のち曇
+ $ 最高気温 16 度
+ $ 最高気温 8 度
 ```
